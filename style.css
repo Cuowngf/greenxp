@@ -1,0 +1,111 @@
+a {
+  text-decoration: none;
+  color: #373435;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 95%;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+  }
+}
+.header {
+  text-wrap: nowrap;
+}
+.header .header-infor {
+  background-color: #608127;
+  height: 44px;
+  padding: 10px;
+  color: white !important;
+  font-size: 14px;
+}
+.header .header-infor a,
+.header .header-infor strong {
+  color: white;
+}
+.header .header-navbar {
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+}
+.header .header-navbar img {
+  height: 100%;
+}
+.header .header-navbar .header-btn {
+  color: white;
+  border-radius: 15px 0;
+  background: #608127;
+  padding: 10px;
+  border: 1px solid #608127;
+  font-weight: bold;
+}
+.header .header-navbar .header-btn:hover {
+  background-color: white;
+  color: #608127;
+}
+.header .header-navbar .header-navbar-menu {
+  padding: 0;
+}
+.header .header-navbar .header-navbar-menu > * {
+  position: relative;
+}
+.header .header-navbar .header-navbar-menu > *::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  right: 0;
+  background-color: #608127;
+  transition: transform 0.5s;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+}
+.header .header-navbar .header-navbar-menu > *:hover::after {
+  color: #608127;
+  transform-origin: bottom left;
+  transform: scaleY(1);
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  max-height: 500px;
+}
+.dropdown .dropdown-content {
+  background-color: white;
+  position: absolute;
+  top: 150%;
+  display: block;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  max-height: 0;
+  transition: max-height 1s;
+  overflow: hidden;
+}
+.dropdown .dropdown-content :not(:last-child) {
+  border-bottom: 1px solid #608127;
+}
+.dropdown .dropdown-content * {
+  padding: 3px 5px;
+}
+.dropdown .dropdown-content a {
+  display: block;
+}
+.dropdown .dropdown-content a:hover {
+  transform: translateX(5px);
+  transition: transform 0.5s;
+}/*# sourceMappingURL=style.css.map */
